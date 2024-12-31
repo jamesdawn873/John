@@ -1,16 +1,24 @@
 import NavBar from "./components/NavBar";
+import Main from "./components/Main";
 
 function App() {
+
     let items = [
-        'John',
-        'Projects'
+        'John'
+
     ]
     let links = [
+        'Projects',
         'LinkedIn',
         'GitHub'
     ]
     return (
-        <><NavBar leftItems={items} rightItems={links} /></>
+        <div id={"root"}>
+            <NavBar leftItems={items} rightItems={links} />
+
+            <Main/>
+
+        </div>
 
     )
 }
